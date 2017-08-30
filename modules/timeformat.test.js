@@ -2,12 +2,10 @@ var assert = require('assert');
 var timeFormat = require('./timeformat');
 
 describe('timeformat function', function () {
-    it('should show "10 sek." when passed 10', function () {
-        assert.equal(timeFormat.print(10), "10 sek.");
-    });
-
-    it('should show "33 sek." when passed 33', function () {
-        assert.equal(timeFormat.print(33), "33 sek.");
+    it('should format second', () => {
+        for(let i = 0; i < 60; i++) {
+            assert.equal(timeFormat.print(i), `${i} sek.`);
+        }
     });
 
     it('should show "1 min." when passed 60', function () {
