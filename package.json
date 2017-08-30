@@ -1,0 +1,23 @@
+{
+  "name": "Node-Time-Format",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukobw/Node-Time-Format.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukobw/Node-Time-Format/issues"
+  },
+  "homepage": "https://github.com/lukobw/Node-Time-Format#readme",
+  "dependencies": {
+    "mocha": "^3.5.0"
+  }
+}
