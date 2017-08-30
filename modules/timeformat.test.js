@@ -6,6 +6,10 @@ describe('timeformat function', function () {
         assert.equal(timeFormat.print(10), "10 sek.");
     });
 
+    it('should show "33 sek." when passed 33', function () {
+        assert.equal(timeFormat.print(33), "33 sek.");
+    });
+
     it('should show "1 min." when passed 60', function () {
         assert.equal(timeFormat.print(60), "1 min.");
     });
