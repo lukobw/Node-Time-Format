@@ -16,5 +16,5 @@ describe('timeformat function', function () {
 
     it('should show "1 godz. 1 min. 40 sek." when passed 3700', function () {
         assert.equal(timeFormat.print(3700), "1 godz. 1 min. 40 sek.");
-    })
-})
+    });
+});

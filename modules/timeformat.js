@@ -5,8 +5,18 @@ function timeFormat(time) {
     var minutes = Math.floor((time % 3600) / 60);
     var hours = Math.floor(time / 3600);
 
-    return `${hours} hour(s), ${minutes} minute(s), ${seconds} second(s)`;
+    if (time <= 10 ) {
+        return `${seconds} sek.`;
+
+    }else if (time <= 60) {
+          return `${minutes} min.`;
+
+    }else if (time < 3600) {
+        return `${minutes} min. ${seconds} sek.`;
+
+    } else {
+        return `${hours} godz. ${minutes} min. ${seconds} sek.`;
+    }
 }
 
 exports.print = timeFormat;
-
